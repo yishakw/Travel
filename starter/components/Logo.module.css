@@ -1,0 +1,10 @@
+.logo {
+  height: 5.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo h2 {
+  text-align: center;
+}
