@@ -1,5 +1,6 @@
 import styles from "./City.module.css";
-import ButtonBack from "./ButtonBack";
+import ButtonBack from "./Button";
+import { useParams } from "react-router-dom";
 const formatDate = (date) =>
   new Intl.DateTimeFormat("en", {
     day: "numeric",
@@ -18,6 +19,9 @@ function City() {
   };
 
   const { cityName, emoji, date, notes } = currentCity;
+  //eslint-disable-next-line
+  const { idd } = useParams();
+  console.log(idd);
 
   return (
     <div className={styles.city}>
